@@ -1,6 +1,6 @@
-# ids-simulasyonu
+# ids-simulator
 
-[![Tests](https://github.com/SafraNako/ids-simulasyonu/actions/workflows/tests.yml/badge.svg)](https://github.com/SafraNako/ids-simulasyonu/actions/workflows/tests.yml)
+[![Tests](https://github.com/SafraNako/ids-simulator/actions/workflows/tests.yml/badge.svg)](https://github.com/SafraNako/ids-simulator/actions/workflows/tests.yml)
 
 A small intrusion-detection engine, run against synthetic traffic
 instead of a live network. No raw sockets, no packet capture, no root
@@ -86,8 +86,8 @@ alert, not fourteen.
 ## Setup
 
 ```bash
-git clone https://github.com/SafraNako/ids-simulasyonu.git
-cd ids-simulasyonu
+git clone https://github.com/SafraNako/ids-simulator.git
+cd ids-simulator
 pip install -e .
 ```
 

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ids-simulasyonu"
+version = "0.1.0"
+description = "İmza tabanlı ve davranışsal (port taraması, brute-force) bir IDS motoru — sentetik trafik senaryolarına karşı çalışır, canlı paket yakalama yapmaz"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+ids-simulasyonu = "ids_simulasyonu.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
